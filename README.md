@@ -1,50 +1,84 @@
-# React + TypeScript + Vite
+# MyStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛍️ Overview
+Welcome to **MyStore**, a modern e-commerce frontend built with **React** and styled using **NeoPop by CRED**. This project provides a sleek and interactive shopping experience with smooth animations and a minimalistic design.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Modern UI**: Styled using **NeoPop by CRED** for a unique look.
+- **Fast & Responsive**: Optimized with React and Vite for speed.
+- **Reusable Components**: Modular design for scalability.
+- **Product Listings**: Displays items dynamically.
+- **Cart Management**: Add, remove, and update items in the cart.
+- **User Authentication**: Secure login and registration system.
+- **Dark Mode**: Supports both light and dark themes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏗️ Tech Stack
+- **React**: JavaScript library for building the UI.
+- **NeoPop by CRED**: Design system for modern UI components.
+- **Vite**: Lightning-fast development environment.
+- **React Router**: For navigation and routing.
+- **Styled Components**: For modular CSS styling.
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/mystore.git
+   cd mystore
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+4. Open in your browser:
+   ```
+   http://localhost:5173
+   ```
+
+## 📂 Project Structure
+```
+📦 mystore
+├── 📁 src
+│   ├── 📁 components    # Reusable UI components
+│   ├── 📁 pages         # Page components (Home, Product, Cart, etc.)
+│   ├── 📁 styles        # Global styles using styled-components
+│   ├── 📁 utils         # Helper functions
+│   ├── App.tsx         # Main application file
+│   ├── main.tsx        # Entry point
+│   ├── routes.tsx      # Routing configuration
+├── 📄 package.json      # Dependencies & scripts
+├── 📄 tsconfig.json     # TypeScript configuration
+├── 📄 vite.config.ts    # Vite configuration
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎨 Using NeoPop Components
+To use NeoPop components in the project, import them as follows:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```tsx
+import { Button } from '@cred/neopop-web/lib/components';
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+const Example = () => {
+  return (
+    <Button variant="primary" kind="elevated" size="big" colorMode="dark">
+      Shop Now
+    </Button>
+  );
+};
 ```
+
+## 🛠️ Development & Contribution
+Feel free to contribute! If you find a bug or have an enhancement idea, open an issue or submit a pull request.
+
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+Made with ❤️ by [Your Name]
+
