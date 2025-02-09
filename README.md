@@ -1,7 +1,9 @@
-# MyStore
+# MyStore - E-commerce Frontend
 
 ## 🛍️ Overview
 Welcome to **MyStore**, a modern e-commerce frontend built with **React** and styled using **NeoPop by CRED**. This project provides a sleek and interactive shopping experience with smooth animations and a minimalistic design.
+
+![MyStore Banner](https://github.com/CRED-CLUB/neopop-web/raw/main/neopop-land.png)
 
 ## 🚀 Features
 - **Modern UI**: Styled using **NeoPop by CRED** for a unique look.
