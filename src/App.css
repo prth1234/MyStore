@@ -165,37 +165,6 @@
   background-color: #1e40af;
 }
 
-.divider {
-  position: relative;
-  text-align: center;
-  margin: 1.5rem 0;
-  width: 100%;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 45%;
-  height: 1px;
-  background-color: #e2e8f0;
-}
-
-.divider::before {
-  left: 0;
-}
-
-.divider::after {
-  right: 0;
-}
-
-.divider span {
-  background-color: white;
-  padding: 0 0.5rem;
-  color: #64748b;
-  font-size: 0.875rem;
-}
 
 .social-login {
   display: grid;
