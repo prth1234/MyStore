@@ -1,7 +1,6 @@
-// @ts-ignore
 import { Button } from "@cred/neopop-web/lib/components";
 
-const ButtonComponent = () => {
+const Page = () => {
     return (
         <Button
             variant="primary"
@@ -17,4 +16,4 @@ const ButtonComponent = () => {
     );
 };
 
-export default ButtonComponent;
+export default Page;
