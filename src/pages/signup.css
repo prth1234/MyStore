@@ -1,0 +1,169 @@
+/* Modern login page styles */
+.login-container {
+    display: flex;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+  }
+  
+  .login-image-section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .image-overlay {a
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0)
+    z-index: 1;
+  }
+  
+  .login-image {
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+  }
+  .login-card{
+    max-width:500px;
+  }
+  
+  .image-text {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem 4rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-container h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #000000 0%, rgba(0, 0, 0, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-container p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  /* Rest of the existing styles... */
+  
+  /* Basic divider */
+  .divider {
+    border-top: 1px solid #e0e0e0; /* Light grey border */
+    margin: 20px 0; /* Space around the divider */
+    width: 100%; /* Full width of its container */
+  }
+  
+  /* Divider with text in the center */
+  .divider-with-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .divider-with-text::before,
+  .divider-with-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    border-top: 1px solid #e0e0e0; /* Light grey border */
+  }
+  
+  .divider-with-text span {
+    position: relative;
+    padding: 0 10px;
+    background-color: #fff; /* Background color behind the text */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  .social-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.875rem;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .apple-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Keep the rest of the existing styles... */
+  .button-container {
+      display: flex;
+      gap:15px;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .signup-link {
+      margin-left: 10px; /* Adjust as needed */
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  
