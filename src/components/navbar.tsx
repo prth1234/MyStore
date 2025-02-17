@@ -28,37 +28,19 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      {/* Title in the middle */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-        <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
-          Giveaway
-        </Typography>
-        <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
-          store
-        </Typography>
-      </div>
+  {/* "Giveaway" in Caps and Bold */}
+  <Typography {...FontVariant.CapsExtraBold10} color={colorPalette.popBlack[500]}>
+    Giveaway
+  </Typography>
+
+  <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
+    Store
+  </Typography>
+</div>
 
       {/* Buttons on the right */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0px' }}>
-        {/* Cart Button */}
-        <a 
-          href="/cart"
-          style={{ 
-            background: 'transparent', 
-            border: 'none', 
-            cursor: 'pointer',
-            padding: '0',
-            textDecoration: 'none' // Remove underline from link
-          }}
-        >
-          <img 
-            src="https://i.ibb.co/4Rbk2dWs/Screenshot-2025-02-17-at-7-03-35-PM-Photoroom.png" 
-            alt="Cart" 
-            style={{ width: '40px', height: '40px' }}
-          />
-        </a>
-
-        {/* Orders Button */}
         <a 
           href="/orders"
           style={{ 
@@ -72,6 +54,22 @@ const Navbar: React.FC = () => {
           <img 
             src="https://i.ibb.co/7dZSjv6M/Screenshot-2025-02-17-at-7-03-24-PM-Photoroom.png" 
             alt="Orders" 
+            style={{ width: '40px', height: '40px' }}
+          />
+        </a>
+        <a 
+          href="/cart"
+          style={{ 
+            background: 'transparent', 
+            border: 'none', 
+            cursor: 'pointer',
+            padding: '0',
+            textDecoration: 'none' // Remove underline from link
+          }}
+        >
+          <img 
+            src="https://i.ibb.co/4Rbk2dWs/Screenshot-2025-02-17-at-7-03-35-PM-Photoroom.png" 
+            alt="Cart" 
             style={{ width: '40px', height: '40px' }}
           />
         </a>
