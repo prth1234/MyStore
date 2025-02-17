@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
       {/* Title in the middle */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-        <Typography {...FontVariant.CapsSemiBold10} color={colorPalette.popBlack[500]}>
+        <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
           Giveaway
         </Typography>
         <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
