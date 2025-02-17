@@ -1,3 +1,4 @@
+// MainPage.tsx
 import React from 'react';
 import Navbar from '../components/navbar';
 import MidLevelMenuBar from '../components/midLevelMenuBar';
@@ -6,7 +7,8 @@ const MainPage = () => {
     return (
         <div style={styles.container}>
             <Navbar />
-            <div className='mainBody'>            <MidLevelMenuBar />
+            <div style={styles.buttonContainer}>
+                <MidLevelMenuBar />
             </div>
         </div>
     );
@@ -14,16 +16,16 @@ const MainPage = () => {
 
 const styles = {
     container: {
-        display: 'flex',
-        flexDirection: 'column',
+        width: '100%',
+        height: '110vh',
+        position: 'relative'
     },
-    mainBody: {
+    buttonContainer: {
+        width: '100%',
         display: 'flex',
-        justifyContent: 'center', // Center the MidLevelMenuBar horizontally
-        alignItems: 'center', // Center the MidLevelMenuBar vertically
-        flex: 1, // Take up the remaining space
+        justifyContent: 'center',
+        marginTop: '70px' // Adjust this value based on your navbar height
     }
-    
 };
 
 export default MainPage;
