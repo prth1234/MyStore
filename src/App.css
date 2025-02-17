@@ -1,5 +1,7 @@
 /* LoginPage.css */
 /* Reset the root styles for the login page */
+@import "tailwindcss";
+
 .login-container {
   display: flex;
   height: 100vh;
