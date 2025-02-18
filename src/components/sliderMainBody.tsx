@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Button } from "@cred/neopop-web/lib/components";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 
 const styles = {
   container: {
     position: 'relative',
-    width: '100%',
+    width: '110%',
     maxWidth: '1800px',
     margin: '0 auto',
     overflow: 'hidden',
@@ -20,14 +19,17 @@ const styles = {
     display: 'flex',
     transition: 'transform 0.5s ease-out',
     height: '500px',
+    alignItems: 'center',
   },
   slide: {
     flex: '0 0 50%', // Each slide takes up 50% of the container width
-    height: '500px',
+    height: '400px', // Adjust height to create space for angled effect
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     boxSizing: 'border-box',
+    transition: 'transform 0.5s ease-out, opacity 0.5s ease-out',
+    transformOrigin: 'bottom center',
   },
   image: {
     width: '100%',
@@ -39,6 +41,15 @@ const styles = {
     top: '50%',
     transform: 'translateY(-50%)',
     zIndex: 10,
+    background: 'rgba(255, 255, 255, 0.85)',
+    borderRadius: '50%',
+    width: '40px',
+    height: '40px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    cursor: 'pointer',
+    border: '1px solid #ccc',
   },
   prevButton: {
     left: '10px', // Positioned to the left
@@ -136,7 +147,18 @@ const ImageSlider = () => {
           }}
         >
           {images.map((image, index) => (
-            <div key={index} style={styles.slide}>
+            <div
+              key={index}
+              style={{
+                ...styles.slide,
+                transform: `rotateY(${
+                  index === currentIndex ? 0 : index < currentIndex ? -30 : 30
+                }deg) scale(${
+                  index === currentIndex ? 1 : 0.8
+                })`,
+                opacity: index === currentIndex ? 1 : 0.7,
+              }}
+            >
               <img
                 src={image}
                 alt={`Slide ${index + 1}`}
@@ -148,18 +170,14 @@ const ImageSlider = () => {
       </div>
 
       {currentIndex > 0 && (
-        <div style={{ ...styles.button, ...styles.prevButton }}>
-          <Button variant="primary" onClick={handlePrev}>
-            <GrFormPrevious />
-          </Button>
+        <div style={{ ...styles.button, ...styles.prevButton }} onClick={handlePrev}>
+          <GrFormPrevious />
         </div>
       )}
 
       {currentIndex < images.length - 1 && (
-        <div style={{ ...styles.button, ...styles.nextButton }}>
-          <Button variant="primary" onClick={handleNext}>
-            <MdNavigateNext />
-          </Button>
+        <div style={{ ...styles.button, ...styles.nextButton }} onClick={handleNext}>
+          <MdNavigateNext />
         </div>
       )}
     </div>
