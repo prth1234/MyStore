@@ -2,14 +2,16 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import MidLevelMenuBar from '../components/midLevelMenuBar';
-
+import SliderMainBody from '../components/sliderMainBody'
 const MainPage = () => {
     return (
         <div style={styles.container}>
             <Navbar />
             <div style={styles.buttonContainer}>
                 <MidLevelMenuBar />
+            
             </div>
+            <SliderMainBody/>
         </div>
     );
 };

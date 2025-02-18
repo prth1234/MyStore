@@ -28,13 +28,13 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '5px' , fontSize:'16px'}}>
   {/* "Giveaway" in Caps and Bold */}
-  <Typography {...FontVariant.CapsExtraBold10} color={colorPalette.popBlack[500]}>
+  <Typography {...FontVariant.CapsExtraBold12} color={colorPalette.popBlack[500]}>
     Giveaway
   </Typography>
 
-  <Typography {...FontVariant.CapsBold10} color={colorPalette.popBlack[500]}>
+  <Typography {...FontVariant.CapsBold12} color={colorPalette.popBlack[500]}>
     Store
   </Typography>
 </div>
