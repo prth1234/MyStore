@@ -78,13 +78,31 @@ const styles = {
   unlockButton: {
     padding: '15px 30px',
     fontSize: '18px',
-    background: '#000',
+    background: 'linear-gradient(145deg, #1a1a1a, #333)',
     color: '#fff',
     border: 'none',
-    borderRadius: '8px',
+    borderRadius: '12px',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: '4px 4px 10px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.1)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: 'bold',
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  
+  // Hover Effect
+  '&:hover': {
+    background: 'linear-gradient(145deg, #222, #444)',
+    transform: 'translateY(-2px)',
+    boxShadow: '6px 6px 12px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.1)',
+  },
+  
+  // Active Effect
+  '&:active': {
+    transform: 'translateY(2px)',
+    boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.1)',
   },
   priceReveal: {
     opacity: 0,
